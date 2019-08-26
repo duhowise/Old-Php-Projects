@@ -1,0 +1,61 @@
+
+
+
+
+
+/*------------------
+pod styles
+------------------*/
+.row .col-md-8{
+    padding: 0
+}
+.pod{
+    box-shadow: 0 0px 2px rgba(0,0,0,0.2);
+    border:1px solid rgba(0,0,0,.3);
+    margin-bottom: 2em;
+}
+
+.pod-header{
+    padding: .3em .6em;
+    background: #0A80BE;
+    border-bottom: 1px solid #0A80BE;
+    font-family: open sans;
+    font-size:1.6rem;
+    color:#ffffff;
+}
+
+.pod-body{
+    height: 13em;
+    background: pin;
+    font-family: arial;
+    text-overflow: wrap;
+}
+
+
+/*------------------
+devetional styles
+------------------*/
+.dev-container{
+    box-shadow: 0 0px 2px rgba(0,0,0,0.2);
+    border:1px solid #0A80BE
+}
+
+.dev-header{
+    padding: 1em;
+}
+
+
+
+.dev-body{
+    padding: 0.5em 1em;
+}
+
+
+
+
+
+
+
+
+
+

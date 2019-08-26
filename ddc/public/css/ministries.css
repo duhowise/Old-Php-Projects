@@ -1,0 +1,61 @@
+#content-row.row{
+  top: 4.5em!important; 
+  padding: 0!important;
+}
+
+/*-----------------
+ hero unit styling
+*----------------*/
+.hero-unit {
+  float: left;
+  width: 100%;
+  height:6.5em;
+  overflow: hidden;
+  margin-bottom: 3em
+}
+
+.hero-title{
+  float: left;
+  font-weight: lighter;
+  font-family: open sans;
+  font-size: 4rem;
+  line-height: 2;
+  padding: 0em .5em;
+}
+
+.hero-lint{
+  width: 70%;
+  float: right;
+  height: 100%;
+}
+
+.hero-img{
+  width:94px;
+  height:100%;
+  padding: .3em
+}
+
+.hero-img img{
+  width:100%;
+  height:100%;
+  border-radius: 40em
+}
+
+.hero-text{
+  padding:1.5em 1em;
+  text-align: right;
+}
+
+.hero-lint >div{
+  float: right;
+}
+
+
+
+/*
+ slideshow style
+*/
+#slideShow{
+  height: 20em;
+  clear: both;
+}

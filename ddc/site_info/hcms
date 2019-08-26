@@ -1,0 +1,80 @@
+^^^^^^^^^^^^^^^^^^^^^^^^CREATION OF OUR OWN SIMPLE AND EASY TO USE CONTENT MANAGEMENT SYSTEM^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FIRST OF ALL WE WILL NEED A DATABASE, SO WE WILL HAVE TO DESIGN ONE.
+
+CMS DATA MODEL
+ER DIAGRAM
+    ENTITIES
+        1. PAGES
+            - page_id
+            - page_name
+        2. CONTENT
+            - content_id
+            - page_id
+            - content_type
+            - content
+            - destination
+        3. CONTAINER
+            - container_id
+            - content_id
+            - content_tag
+        4. SUB_CONTAINER
+            - sub_content_id
+            - container_id
+            - content_id
+            - sub_content_name
+        5. USER_LOGIN
+            - username
+            - password
+            - salt
+        6. PAGE_CONTAINERS
+            - page_container_id
+            - page_container_type
+            - page_container_tag
+            - page_container_content_type
+            - page_id
+
+BUSINESS RULES
+    1. EVERY PAGE MUST ALWAYS HAVE CONTENT
+    2. A PAGE CAN HAVE ONE OR MORE CONTENTS
+    3. EVERY PAGE MUST HAVE CONTAINERS
+    4. A PAGE CAN HAVE ONE OR MORE CONTAINERS
+    5.
+
+STORED PROCEDURE
+CREATE PROCEDURE USER_INSERT
+  ([PARAMETER LIST])
+  BEGIN
+    [BUSINESS LOGIC]
+  END
+
+
+
+  config file sample
+  {
+  "page":{
+            "name":"home",
+            "container":{
+                    "container_tag": "slide show",
+                    "content_type": "picture",
+                    "sub_container": {
+                            "sub_container_tag": "banner",
+                            "content_type": "text"
+                    }
+            }
+        },
+  "page":{
+            "name":"about us"
+        }
+  }
+
+  we will need a way to update tables who's primary keys are foreign keys in other tables without having to
+  fetch its primary key to insert into the table that has its primary key as a foreign key, that would be very annoying
+
+  our database is done we need to create out stored procedures
+  we first need to identify the tasks that we will need to perform on our databases and see tasks we can put into a stored
+  procedure
+  1. login
+    - check if the username is in the database {db}
+    - check if the username password pair entered matches what is stored in the database
+  2. display pages together with their containers and sub containers if any

@@ -1,0 +1,17 @@
+.post-date{
+    background: #f4f4f4;
+    padding: 4px;
+    margin: 3px 0;
+    display: block;
+}
+img {max-width: 100%;}
+
+.view-image{
+        margin: 5px 15px 15px 15px;
+}
+/*
+.post-content{
+    background:#f4f4f4 ;
+    display: block;
+    padding:5px;
+}*/

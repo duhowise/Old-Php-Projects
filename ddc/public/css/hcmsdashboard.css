@@ -1,0 +1,168 @@
+/*
+page list styles
+*/
+aside{
+  clear: both;
+}
+aside ul{
+  
+  margin:0;
+  padding: 3px;
+  color:#7e7e7e;
+}
+
+aside ul li{
+  list-style: none;
+  padding: .8em;
+  border-bottom: 1px solid #CCCCCC;
+  border-left:1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+aside ul li:first-child{
+  border-top: 1px solid #CCCCCC;
+}
+
+aside ul li:after{
+    content:" ";
+  position:relative;
+  left:.35em;
+    float: right;
+    border-width:0.5em .0em .5em .5em;
+    border-style:solid dashed solid;
+    border-color: transparent #ffffff;
+    margin-top:.2em;
+    z-index:4;
+}
+aside ul li:before{
+    content:" ";
+  position:relative;
+    float: right;
+    border-width:0.5em .0em .5em .5em;
+    border-style:solid dashed solid;
+    border-color: transparent #7e7e7e ;
+  margin-top:.2em;
+    z-index:4;
+  transition:border-color .5s;
+}
+
+aside ul li:hover {
+  color:#006DD9;
+}
+
+aside ul li:hover:before{
+  border-color: transparent #006DD9;
+}
+
+.current{
+  color:#006DD9;
+}
+
+.current:before{
+  border-color: transparent #006DD9;
+}
+
+
+/*
+container zone styles
+*/
+.grid-container{
+  z-index: 10!important;;
+}
+.container-wrapper{
+  
+}
+.col-4{
+  padding: 3px;
+}
+
+.col-8 .col-12{
+  padding:0;
+}
+
+h2{
+  text-align: center;
+  font-size:1.8rem;
+  color:#666666;
+}
+
+.container-pod{
+  position:relative;
+  border:1px solid #cccccc;
+}
+
+.main-container{
+  /*
+  set height to auto*/
+  background:#ffffff;
+  border-bottom:1px solid #006DD9;
+}
+
+.sub-container{
+  background:#F9F9F9;
+}
+
+.container-header{
+  border-bottom: 1px solid #cccccc;
+  padding:0.3em .5em;
+  font-size:1rem;
+}
+
+.container-data-field{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.pic-data-container,.vid-data-container{
+  height:2.8rem;
+}
+
+.pdc-left{
+  float:right;
+  width:80%;
+  height:100%;
+  padding:.75em 0.5em;
+  font-size:1rem;
+  color:#7e7e7e;
+}
+
+.pic-data-container .pdc-right{
+  float: left;
+  height: 100%;
+  width:20%;
+  background: url('http://localhost/gabmls.org/public/images/32px/camera.png')no-repeat;
+  background-position:center;
+  
+}
+
+.vid-data-container .pdc-right{
+    float: left;
+    height: 100%;
+    width:20%;
+    background: url('http://localhost/gabmls.org/public/images/32px/film.png')no-repeat;
+    background-position:center;
+}
+
+.pic-upload{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:2.8rem;
+  border:0;
+  opacity: 0;
+  background: pink;
+    cursor:pointer;
+}
+
+.text-data-container{
+  width:100%;
+  height:4.5em;
+  border:0;
+  resize: none;
+  margin:0;
+  font-family: myriad pro,arial,helvetica;
+  padding:.3em;
+}

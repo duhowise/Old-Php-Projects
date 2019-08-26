@@ -1,0 +1,41 @@
+{
+    "page1":{
+        "name":"Home",
+        "containers":[{
+            "tag": "SlideShow",
+            "content_type": "multimedia",
+            "content_format": "picture",
+            "content_multi": 1,
+            "parent": 1,
+            "child":0,
+            "sub_container": [{
+                "tag": "SlideShow_Caption",
+                "content_type": "text",
+                "content_format": "text",
+                "content_multi":0,
+                "parent": 0,
+                "child":1
+            }]
+            },
+            {
+                "tag": "Devotional",
+                "content_type": "text",
+                "content_format": "text",
+                "content_multi": 0,
+                "parent": 0,
+                "child":0,
+                "sub_container": []
+            }]
+    },
+    "page2":{
+        "name":"About",
+        "containers":[{
+            "tag": "About_Text",
+            "content_type": "text",
+            "content_format": "text",
+            "content_multi": 0,
+            "parent": 0,
+            "child":0
+        }]
+    }
+}

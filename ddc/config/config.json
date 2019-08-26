@@ -1,0 +1,39 @@
+{
+    "server": {
+        "DB_TYPE":"mysql",
+        "HOST_NAME" : "localhost",
+        "DB_USER" : "root",
+        "DB_PASS" : "",
+        "DB_NAME":"hcms",
+        "HOST_URL" : "http://localhost/ddc/",
+        "DOMAIN_NAME" : "http://localhost/ddc/",
+        "DIGEST":"9015432640eb37b1f1343ef387cd3e89d6dbc48b38a1e3a9e5fb8d2543ef770207afcd50063900de672a96d9f45129ab8fc7d91f9267bb8178bda1b400a6688f"
+    },
+    "file_paths": {
+        "UPLOAD_DIR" : "C:/wamp64/www/ddc/public/uploads/",
+        "UPLOAD_URL" : "http://localhost/ddc/public/uploads/",
+        "CSS" : "http://localhost/ddc/public/css/",
+        "IMAGES" : "http://localhost/ddc/public/images/",
+        "JS" : "http://localhost/ddc/public/js/"
+
+    },
+    "framework": {
+        "HCMS":true,
+        "DEFAULTY":"266165385586C882C9DED3D8517E18C7"
+    },
+    "error_codes": {
+        "REG_USER_EXIST" : 1,
+        "REG_PASS_EXIST" : 2,
+        "REG_FAIL" : 0,
+        "LOGIN_USERNAME_ERR" : 4,
+        "LOGIN_PASSWORD_ERR" : 5,
+        "LOGIN_FAIL" : 3,
+        "DATABASE_ERR" : 100,
+        "SYNTAX_ERROR" : 200,
+        "ERROR_UNKNOWN" : 300,
+        "CONTROLLER_ERROR" : 150,
+        "MODEL_ERROR" :250,
+        "VIEW_ERROR" : 350
+    }
+
+}

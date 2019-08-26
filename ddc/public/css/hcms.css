@@ -1,0 +1,320 @@
+body{
+  border: 0;
+  padding: 0;
+  margin:0;
+  font-family:myriad pro,arial, helvetica;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+*{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+/*---------------
+header styles
+*---------------*/
+
+header{
+    z-index: 20!important;
+}
+
+#hcms-header{
+  width: 100%;
+  height:3em;
+  background:#F9F9F9;
+  border-bottom: 1px solid #cccccc;
+    
+}
+
+#logo{
+  float: left;
+  padding: .7em;
+  font-family: open sans;
+  font-weight: lighter;
+  height:100%;
+}
+
+.admin-menu.col-4{
+  float: right;
+  height: 100%;
+  padding: 0;
+    cursor: default;
+}
+
+.glyph{
+  font-family: glyph;
+  
+}
+
+.admin-menu > div{
+  float: right;
+  padding: 0em;
+  height: 100%!important;
+}
+
+.log{
+    text-align: right;
+    color: #7e7e7e
+}
+
+.admin{
+    padding: 0!important;
+    height: 100%;
+}
+
+.admin-icon{
+  width: 100%;
+  height: 100%;
+ border-right: 1px solid #0040FF;       
+}
+
+.settings-icon{
+    width:;
+  background: gree;
+  height: 100%;
+  cursor: pointer;
+}
+
+.settings ul{
+    display: none;
+    position: absolute;
+    top:2.6em;
+    right: 0.5em;
+    padding: 0em;
+    background: #fff;
+    z-index: 20;
+    box-shadow: 0 0px 7px rgba(0,0,0,0.2);
+    border-radius: 3px
+}
+
+.menu-list:after{
+    content:" ";
+    position:absolute;
+    top:-.7em;
+    right:12%;
+    border-width:0.0em .7em .7em .7em;
+    border-style:solid dashed solid;
+    border-color:#ffffff  transparent #ffffff ;
+}
+.menu-list:before{
+    content:" ";
+    position:absolute;
+    top:-.7em;
+    right:12%;
+    border-width:0.0em .7em .7em .7em;
+    border-style:solid dashed solid;
+    border-color:#7e7e7e  transparent #7e7e7e ;
+}
+
+.settings:hover ul{
+    display: block;
+}
+
+.settings ul li{
+    padding: .5em 1em;
+    list-style: none;
+    border-bottom: 1px solid #e5e5e5;
+    color:#7e7e7e
+}
+
+.icon{
+    color: #7e7e7e;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.handle{
+  display: none!important;
+  float: right;
+  background: blue;
+  height: 100%!important;
+}
+
+#powered-by{
+  float: right;
+  color:#0040FF;
+  font-family: myriad pro;
+  font-size:11pt;
+  padding:1.1em;
+  background: viole;
+  height:100%;
+}
+
+#login-banner{
+  width:100%;
+  text-align: center;
+  font-family: open sans;
+  font-weight:lighter;
+  font-size:23pt;
+  color:#7e7e7e;
+}
+
+
+#login-form-cont{
+}
+
+.form-field{
+position:relative;
+top:0px;
+width:100%;
+margin-bottom:1.8em;
+font-family:open sans !important;
+}
+
+.form-field p{
+padding:.5em .5em;
+margin:0px;
+
+}
+
+.form-field input{
+width:100%;
+height:2.7em;
+font-size:13pt;
+border:1px solid #bababa;
+padding:6px;
+font-family:open sans;
+transition: border .5s,box-shadow .5s;
+}
+
+.form-field *:focus{
+border:1px solid #0040FF;
+box-shadow: 0px 0px 5px 1px rgba(0,64,255,.4);
+}
+
+.btn{
+  width:100%;
+  height:2em;
+  background:#0040FF;
+  border:0;
+  border-radius:3px;
+  cursor:pointer;
+  color:white;
+  font-size:14pt;
+  font-family:myriad pro,arial, helvetica;
+  transition: border .5s,box-shadow .5s;
+}
+
+.cala1{
+  color:#C22121;
+}
+
+.cala2{
+  color: #D4D055;
+}
+
+.cala3{
+  color:#458E9D;
+}
+
+.cala4{
+  color:#E0C541;
+}
+
+
+@font-face {
+    font-family: 'glyph';
+    src: url('../fonts/icon-works-webfont.eot');
+    src: url('../fonts/icon-works-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/icon-works-webfont.woff') format('woff'),
+         url('../fonts/icon-works-webfont.ttf') format('truetype'),
+         url('../fonts/icon-works-webfont.svg#icon-worksregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+glyphs and glyph styles
+*/
+@font-face {
+    font-family: 'glyph-font';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.fa-rotate-90 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+    filter: none;
+}
+
+
+
